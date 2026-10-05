@@ -1,0 +1,95 @@
+/* Estilos deliberadamente minimos: el objetivo de la asignatura no es el CSS. */
+
+:root {
+  --tinta: #1c1c1c;
+  --papel: #fbfaf7;
+  --linea: #d8d4cb;
+  --acento: #1b5e5a;
+  --alerta: #a33028;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 1rem 4rem;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+header, main, footer {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+header {
+  padding: 2rem 0 1rem;
+  border-bottom: 2px solid var(--acento);
+}
+
+h1 { margin: 0; font-size: 1.75rem; }
+h2 { font-size: 1.1rem; margin-top: 2rem; }
+
+#estado-servidor { margin: 0.25rem 0 0; color: #666; font-size: 0.9rem; }
+
+.formulario { display: grid; gap: 0.4rem; }
+
+label { font-size: 0.85rem; color: #555; }
+
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--linea);
+  border-radius: 3px;
+  font: inherit;
+  background: #fff;
+}
+
+button {
+  justify-self: start;
+  margin-top: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 3px;
+  background: var(--acento);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover { background: #164a47; }
+
+.error { color: var(--alerta); font-size: 0.9rem; }
+
+ul { list-style: none; padding: 0; }
+
+li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--linea);
+}
+
+li h3 { margin: 0 0 0.2rem; font-size: 1rem; }
+li p { margin: 0 0 0.3rem; }
+li .meta { font-size: 0.8rem; color: #666; }
+
+li button {
+  margin: 0.4rem 0 0;
+  padding: 0.25rem 0.6rem;
+  background: none;
+  color: var(--alerta);
+  border: 1px solid var(--linea);
+  font-size: 0.8rem;
+}
+
+li button:hover { background: #f4eceb; }
+
+footer {
+  margin-top: 3rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--linea);
+  font-size: 0.8rem;
+  color: #777;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}

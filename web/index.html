@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tablón de avisos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Tablón de avisos</h1>
+    <p id="estado-servidor">Conectando con la API…</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Publicar un aviso</h2>
+      <div class="formulario">
+        <label for="autor">Autor</label>
+        <input id="autor" type="text" maxlength="80" placeholder="Tu nombre">
+
+        <label for="titulo">Título</label>
+        <input id="titulo" type="text" maxlength="120" placeholder="Título del aviso">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="3" placeholder="Contenido del aviso"></textarea>
+
+        <button id="boton-publicar" type="button">Publicar aviso</button>
+        <p id="error" class="error" hidden></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Avisos publicados</h2>
+      <ul id="lista-avisos"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <span id="version">versión desconocida</span>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

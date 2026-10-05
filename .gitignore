@@ -1,0 +1,23 @@
+# Dependencias: se instalan, no se versionan.
+node_modules/
+
+# Secretos y configuracion de cada maquina. NUNCA al repositorio.
+# El que si se sube es api/.env.example, que sirve de plantilla.
+.env
+.env.local
+
+# Resultado de compilar el cliente Java.
+target/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Entornos de desarrollo
+.idea/
+.vscode/
+*.iml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
